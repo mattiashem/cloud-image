@@ -5,7 +5,7 @@ if [ -f $FILE ];
 then
    echo "File $FILE exists. this server is already setup"
    sed -i 'setup_images' /etc/rc.local
-   halt
+   #halt
 else
    echo "File $FILE does not exist. and I will du setup" 
 
