@@ -1,7 +1,7 @@
 echo "Create image"
 sudo qemu-img create -f qcow2 /var/lib/libvirt/images/imagecreator.qcow2 50G
 echo "Start Installation"
-virt-install --name=imagecreater.ops.fareoffice.com \
+sudo virt-install --name=imagecreater.ops.fareoffice.com \
  --ram=2048 \
 --vcpus=2 \
 --os-type=linux \

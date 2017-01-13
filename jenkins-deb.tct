@@ -1,0 +1,5 @@
+#
+#
+# Deps needed for Jenkins server ore slave to build the images
+yum install git -y
+yum -y install qemu-kvm libvirt virt-install bridge-utils

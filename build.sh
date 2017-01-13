@@ -25,8 +25,9 @@ done
 
 
 echo "Clean up"
-./clean_vm.sh
+#./clean_vm.sh
 echo "Upload image to openstack"
+#openstack image create --disk-format qcow2 --container-format bare --public --file imagecreator.qcow2 Centos7
 echo "Remove image"
 
 #sudo rm -rf /var/lib/libvirt/images/imagecreator.qcow2
