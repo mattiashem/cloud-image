@@ -11,7 +11,7 @@ COUNTER=0
 while [  $COUNTER -lt 10 ]; do
 
 	tmp=$(virsh list --all | grep "imagecreater.ops.fareoffice.com" | awk '{ print $3}')
-	if ([ "x$tmp" == "x" ] || [ "x$tmp" != "xrunning" ])
+	if ([ "x$tmp" == "x" ] || [ "x$tmp" != "xkör" ])
 	then
     		echo "VM does not exist or is shut down!"
     		# Try additional commands here...
