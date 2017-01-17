@@ -4,8 +4,8 @@ FILE=has_run
 if [ -f $FILE ];
 then
    echo "File $FILE exists. this server is already setup"
-   sed -i 'setup_images' /etc/rc.local
-   #halt
+   sed -i '\/etc\/opt\/setup_images.sh/d' /etc/rc.local
+   halt
 else
    echo "File $FILE does not exist. and I will du setup" 
 
