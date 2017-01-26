@@ -50,7 +50,7 @@ else
 
 
    mkdir -p /etc/systemd/system/docker.service.d/
-   curl -L https://raw.githubusercontent.com/mattiashem/cloud-image/master/ks.cfg -o /etc/systemd/system/docker.service.d/docker.conf   
+   curl -L https://raw.githubusercontent.com/mattiashem/cloud-image/master/docker.conf -o /etc/systemd/system/docker.service.d/docker.conf   
 
 
    systemctl daemon-reload
